@@ -19,51 +19,45 @@
         .ls-container {
         color: white;
         margin-top: 3vw;
-        margin-left: 10vw;
         width: 30%;
         border: 1px solid gray;
         padding: 0px;
         }
-        .parent {
-        margin-top: 2vw;
-        margin-left: 10vw;
-        margin-right: 30px;
-        width: 100%;
-        padding: 0px; 
+        .parent__image {
+        width: 64px;
+        height: 64px;
         }
-        .legal-content{
+        .parent__link {
+        color: white;
+        text-decoration: none;
+        margin-left: 10px;
+        font-weight: 500;
+        margin-top: 5px;
+        }
+        .footer{
         text-align: center;
         padding: 10px;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
         }
-        .legal-text{
+        .footer__text{
         margin-right: 5px;
         color: white;
         }
         .kali-image{
-            position: relative;
-            top: 0;
-            left: 0;
-        }
-        .vb-image{
-        top: -5vw;
-        left: -10vw;
-        width: 4%;
-        position: relative;
-        float:unset;
-        }
-        .javaand-image{
-        top: -12vw;
-        left: -38vw;
-        width: 4.7%;
-        position: relative;
-        float:unset;
-        }
-        .python-image{
-        width: 4%;
-        top: -5vw;
-        left: -40vw;
-        position: relative;
-        float:unset;
+           /* position: relative; */
+        display: flex;
+        flex-direction: column;
+        background-image: url("img/kali2.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 900px;
+        height: 500px;
+        top: 0;
+        left: 0;
+        padding-top: 50px;
         }
         
     </style>
@@ -89,7 +83,7 @@
     <div class="firefly"></div>
     <div class="firefly"></div>
 
-    <div class="navbar">
+    <nav class="navbar">
         <h1 class="headline">
             code-reflections.net<br> 
             <span class="text-line">$ java, android, vb.net, python and other stuffs.</span>
@@ -102,24 +96,38 @@
             <a href=""> Skills</a>
             <a href=""> About</a>
         </div>  
-    </div>
-
-    <div class="ls-container">
-        $ ls 
-    </div> 
+    </nav>
 
     <div class="parent">
-        <img class="kali-image" src="img/kali2.png"></a>
-            
-        <a href="basic.html"> <img class= "vb-image" src="img/basic.png">  </a>
+        <div class="ls-container">
+            $ ls 
+        </div> <br>
         
-        <a href="java.html"> <img class= "javaand-image" src="img/javaand.png"></a>
-        <a href="python.html"> <img class= "python-image" src="img/python.png"></a>
+        <section class="kali-image">
+
+            <a class= "parent__link" href="basic.html"> 
+                <img class= "parent__image" src="img/basic.png">
+                <p>VB.NET</p>
+            </a>
+            
+            <a class= "parent__link" href="java.html"> 
+                <img class= "parent__image" src="img/javaand.png">
+                <p>Java/Android</p>
+            </a>
+
+            <a class= "parent__link" href="python.html"> 
+                <img class= "parent__image" src="img/python.png">
+                <p>Python</p>
+            </a>
+
+        </section>
+            
+        
     </div><br><br><br>
 
-    <div class="legal-content">
-        <span class="legal-text">© 2022 Code-Reflections |<a href="#">Impressum</a> |<a href="#">Datenschutz</a></span>
-    </div>
+    <footer class="footer">
+        <span class="footer__text">© 2022 Code-Reflections |<a href="#">Impressum</a> |<a href="#">Datenschutz</a></span>
+    </footer>
 
 </div>
 </body>
