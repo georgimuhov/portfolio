@@ -16,9 +16,6 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .container{
-        width: 100%;
-        }
         .text-container {
         margin: auto;
         width: 50%;
@@ -42,20 +39,24 @@
             background-color: gray;
             padding: 7px;
         }
-        .legal-content{
-            text-align: center;
-            padding: 10px;
+        .footer{
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
         }
-        .legal-text{
-            margin-right: 5px;
-            color: white;
+        .footer__text{
+        margin-right: 5px;
+        color: white;
         }
     </style>
 
 </head>
 
 <body>
-    <div class="container">
+<div class="container">
 
     <div class="firefly"></div>
     <div class="firefly"></div>
@@ -73,9 +74,9 @@
     <div class="firefly"></div>
     <div class="firefly"></div>
 
-    <div class="navbar">
+    <nav class="navbar">
         <h1 class="headline">
-            code-reflections.net<br> 
+            georgimuhov.github.io<br> 
             <span class="text-line">$ java, android, vb.net, python and other stuffs.</span>
         </h1>
 
@@ -86,7 +87,7 @@
             <a href=""> Skills</a>
             <a href=""> About</a>
         </div>  
-    </div>
+    </nav>
 
     <div class="text-container">
         
@@ -109,11 +110,11 @@
             Refer to Figure 7.1 for an overview of threads and their shared environment within a
             process.<br><br></p>
         
-    </div><br><br><br>
-
-    <div class="legal-content">
-        <span class="legal-text">© 2022 Code-Reflections |<a href="#">Impressum</a> |<a href="#">Datenschutz</a></span>
     </div>
+
+    <footer class="footer">
+        <span class="footer__text">© 2022 Code-Reflections |<a href="#">Impressum</a> |<a href="#">Datenschutz</a></span>
+    </footer>
 
 </div>
 </body>
