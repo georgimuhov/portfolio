@@ -19,6 +19,7 @@
         .ls-container {
         color: white;
         margin-top: 3vw;
+        margin-left: 10vw;
         width: 30%;
         border: 1px solid gray;
         padding: 0px;
@@ -28,6 +29,7 @@
         height: 64px;
         }
         .parent__link {
+        margin-left: 10vw;
         width: 70px;
         height: 70px;
         display: flex;
@@ -38,19 +40,8 @@
         font-weight: 500;
         margin-bottom: 20px;
         }
-        .footer{
-        text-align: center;
-        padding: 10px;
-        position: fixed;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        }
-        .footer__text{
-        margin-right: 5px;
-        color: white;
-        }
         .kali-image{
+        margin-left: 10vw;
         display: flex;
         flex-direction: column;
         background-image: url("img/kali2.png");
@@ -62,7 +53,6 @@
         left: 0;
         padding-top: 50px;
         }
-        
     </style>
 
 </head>
@@ -93,12 +83,11 @@
         </h1>
 
         <div>
-            <a href="index.html"> Home</a>
-            <a href="projects.html"> <u>My Projects</u></a>
-            <a href="other.html"> Other</a>
-            <a href=""> Skills</a>
-            <a href=""> About</a>
-        </div>  
+            <a href="index.html" class="animated-button7"> <span></span>Home</a>
+            <a href="projects.html"class="animated-button7"> <span>|</span>My Projects</a>
+            <a href="tools.html"class="animated-button7"> <span></span>My Tools</a>
+            <a href="about.html"class="animated-button7"> <span></span>About</a>
+        </div> 
     </nav>
 
     <div class="parent">
@@ -124,7 +113,7 @@
             </a>
 
         </section>
-            
+    </div>   
 
     <footer class="footer">
         <span class="footer__text">© 2022 Code-Reflections |<a href="#">Impressum</a> |<a href="#">Datenschutz</a></span>
