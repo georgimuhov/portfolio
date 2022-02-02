@@ -16,12 +16,6 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .text-container {
-        margin: auto;
-        width: 50%;
-        border: 0px solid gray;
-        padding: 8px;
-        }
         .ls-container {
         color: white;
         margin-top: 3vw;
@@ -32,7 +26,7 @@
         }
         h2 {
         text-align: center;
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
         color: aquamarine;
         }
         p {
@@ -42,9 +36,38 @@
         color: white;
         }
         .container-img{
-            background-color: gray;
-            padding: 7px;
+        background-color: gray;
+        padding: 7px;
         }
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        .leftcolumn { 
+        margin-top: 20px;
+        margin-left: 10vw;  
+        float: left;
+        width: 13%;
+        }
+        .rightcolumn {
+        margin-top: 20px;
+        margin-left: 0vw; 
+        float: left;
+        width: 60%;
+        opacity: 1;
+        }
+        .card {
+        padding: 0px;
+        }
+        @media screen and (max-width: 100px) {
+        .leftcolumn, .rightcolumn {   
+            width: 100%;
+            padding: 0;
+        }
+        
+    }
     </style>
 
 </head>
@@ -81,33 +104,43 @@
             <a href="about.html"class="animated-button7"> <span>|</span>About</a>
         </div>   
     </nav>
-
+    
     <div class="parent">
         <div class="ls-container">
             $ whoami 
-        </div> <br>
+        </div> 
     </div>  
 
-    <div class="bewerb__parent">
+    <div class="row">
 
-        <div class="bewerb__container">
-            <img class="bewerb__image" src="img/bewerb.jpg">
-        </div>
-
-        <div class="text-container1">
-            <p>We begin this chapter by reviewing common terminology associated with threads. A thread
-                is the smallest unit of execution that can be scheduled by the operating system. A process
-                is a group of associated threads that execute in the same, shared environment. It follows,
-                then, <br><br></p>
+        <img class="leftcolumn" src="img/bewerb.jpg">
+          
+        <div class="rightcolumn">
             
-        </div>
+                <div class="text-container">
+                <h2>DE</h2><br>
+                <p>Ich heiße Georgi Muhov, 
+                    seit Februar 2021 absolviere ich eine Umschulung zum Fachinformatiker Anwendungsentwicklung bei der GFN GmbH in München.<br><br> 
+                    Bestandteil dieser Weiterbildung ist ein 9-monatiges betriebliches Praktikum, für das ich ab dem Mai 2022 zur Verfügung stehe. 
+                    <br><br>Somit suche ich als angehender Fachinformatiker nach einem zukunftsorientierten Unternehmen, 
+                    welches mir die Chance zu einem qualifizierten Praktikum bieten kann.<br><br></p>
+                <h2>EN</h2><br>
+                    <p>My name is Georgi Muhov,
+                     Since February 2021 I have been retraining as an IT specialist in application development at GFN GmbH in Munich.<br><br>
+                     Part of this further training is a 9-month internship, for which I will be available from May 2022.
+                     <br><br>So, as a prospective IT specialist, I am looking for a future-oriented company,
+                     which can offer me the opportunity for a qualified internship.<br><br></p>
+                </div>
+            
+          </div>
+
+        
     </div>
 
     <footer class="footer">
         <span class="footer__text">© 2022 Code-Reflections |<a href="#">Impressum</a> |<a href="#">Datenschutz</a></span>
     </footer>
 
-</div>
 </body>
 
 
