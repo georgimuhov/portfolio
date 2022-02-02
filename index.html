@@ -18,17 +18,17 @@
     <style>
         .text-container {
         margin: auto;
-        width: 50%;
+        width: 65%;
         border: 0px solid gray;
         padding: 8px;
+        text-shadow:  2px 1px 1px black;
+        font-size: 18px;
         }
-
         h2 {
         text-align: center;
         text-transform: uppercase;
         color: aquamarine;
         }
-
         p {
         text-indent: 50px;
         text-align: justify;
@@ -78,24 +78,13 @@
 
     <div class="text-container">
         
-        <h2>Introduction</h2><br><br>
+        <h2>Java Rules</h2><br><br>
         <p>We begin this chapter by reviewing common terminology associated with threads. A thread
             is the smallest unit of execution that can be scheduled by the operating system. A process
             is a group of associated threads that execute in the same, shared environment. It follows,
             then, that a single-threaded process is one that contains exactly one thread, whereas a
             multi-threaded process is one that contains one or more threads.<br><br>
-            By shared environment, we mean that the threads in the same process share the same
-            memory space and can communicate directly with one another. Yes, you will finally see how
-            static variables can be useful for performing complex, multi-threaded tasks! Remember
-            from your OCA studies that static methods and variables are defined on a single class object
-            that all instances share.<br><br> For example, if one thread updates the value of a static object, then
-            this information is immediately available for other threads within the process to read.
-            In this chapter, we will talk a lot about tasks and their relationships to threads. A task is
-            a single unit of work performed by a thread. Throughout this chapter, a task will commonly
-            be implemented as a lambda expression. <br><br>A thread can complete multiple independent tasks
-            but only one task at a time.
-            Refer to Figure 7.1 for an overview of threads and their shared environment within a
-            process.<br><br></p>
+            <br><br><br><br></p>
         
     </div>
 
